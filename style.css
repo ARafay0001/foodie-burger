@@ -1,0 +1,157 @@
+* { 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(246, 240, 235, 1);
+}
+.head {
+    background-color: rgba(255, 255, 255, 0.623);
+    width: 100%;
+    backdrop-filter: blur(14px);
+    position: fixed;
+    /* top: 0; */
+    
+}
+main  {
+    /* max-width: 1300px; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+header {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+}
+nav a {
+    color: rgba(73, 33, 24, 1);
+    text-decoration-line: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+nav a + a {
+    margin-left: 44px;
+    
+}
+section {
+    background-color: rgba(246, 240, 235, 1);
+    text-align: center;
+    color: rgba(73, 33, 24, 1);;
+}
+section img {
+    width: 100%;
+}
+.img-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 32px 80px 0px 80px;
+}
+.text {
+    margin: 8px auto;
+    text-align: center;
+    font-size: 22px;
+}
+.top-button{
+    cursor: pointer;
+    text-align: right;
+    
+}
+.top-button a  {
+    color: rgba(73, 33, 24, 1);
+    margin-right: 24px; 
+}
+.cross {
+    display: none;
+}
+.hamburger {
+    display: none;
+}
+@media (max-width: 1200px) {
+
+    header {
+    padding: 20px 28px;
+    }   
+    nav a{
+        font-size: 18px;
+    }
+      
+    nav a + a{
+        margin-left: 32px;
+    }
+
+}
+
+@media (max-width: 920px) {
+    .logo img {
+        width: 42px;
+    }
+    header {
+    padding: 14px 20px;
+    }   
+    nav a{
+        font-size: 16px;
+    }
+      
+    nav a + a{
+        margin-left: 24px;
+    }
+
+}
+@media (max-width: 760px) {
+    /* header {
+        position: relative;
+    } */
+    nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 36px 24px;
+        /* right: 16px; */
+        /* top: 16; */
+        top: 16px;
+        right: -213px;
+        transition: right 0.3s ease-in-out;
+    }
+    nav a + a {
+        margin: 0;
+        margin-top: 16px;
+    }
+    .cross {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        font-size: 32px;
+        right: 16px;
+        top: 16px;
+    }
+    .hamburger {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .toRight {
+        right: 16px;
+    }
+    .img-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 16px 40px 0px 40px;
+    }
+    .text {
+    font-size: 16px;
+    }
+    section h1 {
+        font-size: 16px;
+    }
+    .top-button{
+    font-size: 24px;
+    }
+}
